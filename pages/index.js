@@ -61,15 +61,17 @@ export default function Home() {
               <li><Link href="/posts/traditional">Traditional</Link></li>
               <li><Link href="/posts/digital">Digital</Link></li>
               </ul>
-            <p>Crayons gave me my first insight that I had a love for making <span className="text-green-300">art</span>. From then I ventured to the technical drawings with graphite and pastels. My favorite medium hands down; a tie between the black and white of the graphite with fine points to deep shadows and the freedom of pastels. Lately I have been hevay on acrylic and watercolor, with some alcholol markers.</p>
-            <p>Keeping pace with the world, since 2023, I have begun to draw digitally. Quite the adventure, I am excited to sea what the medium brings to my collection.</p>
+            <p>Crayons gave me my first intuitive insight that I had a love for making <span className="text-green-300">art</span>. From then I ventured to more technical drawings with graphite and pastel. My absolute two favorite mediums hands down; a tie because for one, the melodic dance of black and white from the graphite with fine points to deep shadows and the full freedom of expression with pastels. Lately I have been heavy on acrylic and watercolor, with some alcohol markers.</p>
+            <p>Keeping pace with the world, since 2023, I have started working with drawing digitally. Quite the adventure, with the extensive scope of many possibilities, I am excited to sea what the medium brings to my collection.</p>
           </div>
 
           <div>
-            <div>
-            </div>
           </div>
         </section>
+
+        <div class="footer">
+        </div>
+
 
       
       </main>
