@@ -48,7 +48,7 @@ export default function Home() {
             <AiFillTwitterCircle />
           </div>
 
-          <div className="relative mx-auto bg-gradient-to-b from-yellow-600 mt-20 w-100 h-300 rounded-full">
+          <div className="relative mx-auto xl-auto 2xl-auto bg-gradient-to-b from-yellow-600 mt-20 w-100 h-300 rounded-full ">
             <Image src={logo} objectFit="cover"/>
           </div>
         
