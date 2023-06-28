@@ -37,7 +37,7 @@ export default function Home() {
           </nav>
 
           <div className="text-center p-10">
-            <h2 className="text-6xl py-2 text-green-300 font-md">Artist</h2>
+            <h2 className="text-6xl py-2 text-green-300 font-md">Apple</h2>
             <h3 className="text-2xl py-2">inspired by nature.</h3>
             <p className="text-md py-5 leading-8 text-purple-300">Art is a unique field of study. From the stars to the bugs that crawl the earth, this world amazes me. Many great artist have come before me whom i truly look to exceed. This is my perspective or attempt to lay my own path. Thank you for visiting. please, Enjoy.</p>
           </div>
