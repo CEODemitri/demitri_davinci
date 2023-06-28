@@ -61,8 +61,8 @@ export default function Home() {
               <li><Link href="/posts/traditional">Traditional First</Link></li>
               <li><Link href="/posts/digital">Digital Newb</Link></li>
               </ul>
-            <p className="leading-8">Long Ago, Crayons gave me the first glimpse of the idea that I had a love for making <span className="text-green-300">art</span>. From then I ventured to more technical drawings with graphite and pastel. My absolute two favorite mediums hands down; a tie because for one, the melodic dance of black and white from the graphite with fine points to deep shadows and the full freedom of expression with pastels. Lately I have been heavy on acrylic and watercolor, with some alcohol markers.</p>
-            <p className="leading-8">Intrigued by ideas of how I may best exploit the Digital Spectrum to best portray the art I saw, since 2023, I have started working with drawing digitally. Quite the adventure, with the extensive scope of many possibilities, I am excited to sea what the medium brings to my collection.</p>
+            <p className="leading-loose">Long Ago, Crayons gave me the first glimpse of the idea that I had a love for making <span className="text-green-300">art</span>. From then I ventured to more technical drawings with graphite and pastel. My absolute two favorite mediums hands down; a tie because for one, the melodic dance of black and white from the graphite with fine points to deep shadows and the full freedom of expression with pastels. Lately I have been heavy on acrylic and watercolor, with some alcohol markers.</p>
+            <p className="leading-loose text-purple-600">Intrigued by ideas of how I may best exploit the Digital Spectrum to best portray the art I saw, since 2023, I have started working with drawing digitally. Quite the adventure, with the extensive scope of many possibilities, I am excited to sea what the medium brings to my collection.</p>
           </div>
 
           <div>
