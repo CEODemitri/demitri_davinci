@@ -37,7 +37,7 @@ export default function Home() {
           </nav>
 
           <div className="text-center p-10">
-            <h2 className="text-6xl py-2 text-green-300 font-md">Apple</h2>
+            <h2 className="text-6xl py-2 text-green-300 font-md">Artist</h2>
             <h3 className="text-2xl py-2">inspired by nature.</h3>
             <p className="text-md py-5 leading-8 text-purple-300">Art is a unique field of study. From the stars to the bugs that crawl the earth, this world amazes me. Many great artist have come before me whom i truly look to exceed. This is my perspective or attempt to lay my own path. Thank you for visiting. please, Enjoy.</p>
           </div>
@@ -56,13 +56,13 @@ export default function Home() {
 
         <section>
           <div className="text-center">
-            <h3 className="text-3xl py-1">Medium</h3>
+            <h3 className="text-3xl py-1 mt-2em">My Medium</h3>
             <ul className="text-md py-2 leading-8 text-purple-400">
-              <li><Link href="/posts/traditional">Traditional</Link></li>
-              <li><Link href="/posts/digital">Digital</Link></li>
+              <li><Link href="/posts/traditional">Traditional First</Link></li>
+              <li><Link href="/posts/digital">Digital Newb</Link></li>
               </ul>
-            <p>Crayons gave me my first intuitive insight that I had a love for making <span className="text-green-300">art</span>. From then I ventured to more technical drawings with graphite and pastel. My absolute two favorite mediums hands down; a tie because for one, the melodic dance of black and white from the graphite with fine points to deep shadows and the full freedom of expression with pastels. Lately I have been heavy on acrylic and watercolor, with some alcohol markers.</p>
-            <p>Keeping pace with the world, since 2023, I have started working with drawing digitally. Quite the adventure, with the extensive scope of many possibilities, I am excited to sea what the medium brings to my collection.</p>
+            <p className="leading-5">Long Ago, Crayons gave me the first glimpse of the idea that I had a love for making <span className="text-green-300">art</span>. From then I ventured to more technical drawings with graphite and pastel. My absolute two favorite mediums hands down; a tie because for one, the melodic dance of black and white from the graphite with fine points to deep shadows and the full freedom of expression with pastels. Lately I have been heavy on acrylic and watercolor, with some alcohol markers.</p>
+            <p>Intrigued by ideas of how I may best exploit the Digital Spectrum to best portray the art I saw, since 2023, I have started working with drawing digitally. Quite the adventure, with the extensive scope of many possibilities, I am excited to sea what the medium brings to my collection.</p>
           </div>
 
           <div>
