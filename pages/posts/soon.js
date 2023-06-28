@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import Link from 'next/link'
+import UpgradeList from './components/UpgradeList';
 
 
 export default function soonPost() {
@@ -8,7 +9,12 @@ export default function soonPost() {
         <Link href="/">Back to home</Link>
       </h2>
 
-      <h1>soon to Post</h1>
+      <h1>
+        <p>
+          soon to Post
+        </p>
+      </h1>
+      <UpgradeList />
     </>
   );
 }
