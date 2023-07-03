@@ -61,9 +61,9 @@ export default function Home() {
               <Link href="/posts/traditional" className="text-md py-2 leading-8 text-purple-400">Traditional First</Link>
                     <div className="flex-wrap wrap-1">
                       // image holders for now
-                      <div className="h-36 w-24 bg-blue-200"></div>
-                      <div className="h-36 w-24 bg-blue-200"></div>
-                      <div className="h-36 w-24 bg-blue-200"></div>
+                      <div className="h-36 w-24 bg-blue-200">Yes</div>
+                      <div className="h-36 w-24 bg-blue-200">Hello</div>
+                      <div className="h-36 w-24 bg-blue-200">OK</div>
                     </div>
             </div>
             <div>
