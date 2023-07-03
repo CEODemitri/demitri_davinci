@@ -59,9 +59,21 @@ export default function Home() {
             <h3 className="text-3xl py-1 mt-2em">My Medium</h3>
             <div>
               <Link href="/posts/traditional" className="text-md py-2 leading-8 text-purple-400">Traditional First</Link>
+                    <div className="flex-wrap wrap-1">
+                      // image holders for now
+                      <div className="h-36 w-24 bg-blue-200"></div>
+                      <div className="h-36 w-24 bg-blue-200"></div>
+                      <div className="h-36 w-24 bg-blue-200"></div>
+                    </div>
             </div>
             <div>
               <Link href="/posts/digital" className="text-md py-2 leading-8 text-purple-400">Digital Newb</Link>
+                    <div className="flex-wrap wrap-1">
+                      // image holders for now
+                      <div className="h-36 w-24 bg-blue-200"></div>
+                      <div className="h-36 w-24 bg-blue-200"></div>
+                      <div className="h-36 w-24 bg-blue-200"></div>
+                    </div>
             </div>
             
             <p className="leading-loose">Long Ago, Crayons gave me the first glimpse of the idea that I had a love for making <span className="text-green-300">art</span>. From then I ventured to more technical drawings with graphite and pastel. My absolute two favorite mediums hands down; a tie because for one, the melodic dance of black and white from the graphite with fine points to deep shadows and the full freedom of expression with pastels. Lately I have been heavy on acrylic and watercolor, with some alcohol markers.</p>
