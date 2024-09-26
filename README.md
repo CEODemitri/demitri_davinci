@@ -8,7 +8,14 @@ Welcome to my journey of learning to develop applications with Next and Tailwind
 4. build a beautiful site to display my art, and maybe connecting with different people. 
 5. have fun coding; mostly for coding at work when i get the coding shivers.
 
-## to do List Sprint 1 due 2.3
+## to do List Sprint 1 due 2 3 23
 1. review site, see possible improvement oppurtunities
 3. list upgrades/modifications
 2. plan new content
+
+## UPDATE 9 26 24
+- [ ] UX
+- [ ] Easy Design
+- [ ] Code
+- [ ] Iterate and Enhance
+- [ ] Complete By 10 / 10
