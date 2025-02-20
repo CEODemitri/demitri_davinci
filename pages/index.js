@@ -1,93 +1,303 @@
-import Head from 'next/head'
-import {BsFillMoonStarsFill} from 'react-icons/bs'
-import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai'
-import Image from 'next/image'
-import logo from '../public/logo.png'
-import Link from 'next/link'
-import { useState } from "react";
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  Palette,
+  Music,
+  Calendar,
+  Instagram,
+  Twitter,
+  Facebook,
+} from "lucide-react";
 
-
-export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+export default function ArtistLandingPage() {
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div>
       <Head>
         <title>Demitri da Vinci</title>
         <meta />
         <link />
       </Head>
 
-      <main className="bg-white-700 px-10 md:px-20 dark:bg-gradient-to-b from-sky-700">
-        
-        <section className="min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-2xl font-richards">Demitri da Vinci</h1>
-            
-            <ul className="flex items-center">
-              
-              <li>
-                <BsFillMoonStarsFill 
-                  onClick={() => setDarkMode(!darkMode)} 
-                  className="cursor-pointer text-xl"/>
-              </li>
-              <li>
-                <Link className="bg-gradient-to-r from-green-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href="/posts/soon">#comingSoon</Link>
-              </li>
-            </ul>
+      <div className="min-h-screen bg-gradient-to-br from-purple-100 to-indigo-100 font-swash">
+        <header className="relative h-screen flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/placeholder.svg?height=1080&width=1920"
+              alt="Artist's showcase piece"
+              layout="fill"
+              objectFit="cover"
+              className="opacity-50"
+            />
+          </div>
+          <nav className="absolute top-0 left-0 right-0 z-10 flex justify-between items-center p-6">
+            <Link href="/" className="text-2xl font-bold text-purple-900">
+              ArtistName
+            </Link>
+            <div className="space-x-4">
+              <Link
+                href="#about"
+                className="text-purple-900 hover:text-purple-700"
+              >
+                About
+              </Link>
+              <Link
+                href="#gallery"
+                className="text-purple-900 hover:text-purple-700"
+              >
+                Gallery
+              </Link>
+              <Link
+                href="#events"
+                className="text-purple-900 hover:text-purple-700"
+              >
+                Events
+              </Link>
+              <Link
+                href="#contact"
+                className="text-purple-900 hover:text-purple-700"
+              >
+                Contact
+              </Link>
+            </div>
           </nav>
-
-          <div className="text-center p-10">
-            <h2 className="text-6xl py-2 text-green-300 font-md">Artist</h2>
-            <h3 className="text-2xl py-2">inspired by nature.</h3>
-            <p className="text-md py-5 leading-8 text-purple-300">Art is a unique field of study. From the stars to the bugs that crawl the earth, this world amazes me. Many great artist have come before me whom i truly look to exceed. This is my perspective or attempt to lay my own path. Thank you for visiting. please, Enjoy.</p>
+          <div className="relative z-10 text-center">
+            <h1 className="text-6xl font-extrabold text-purple-900 mb-4">
+              Demitri Da Vinci
+            </h1>
+            <p className="text-2xl text-purple-800 mb-8">
+              Exploring the boundaries of color and form
+            </p>
+            <Button className="bg-purple-600 hover:bg-purple-700 text-white">
+              Explore My Work
+            </Button>
           </div>
+        </header>
+        <main>
+          <section id="about" className="py-20 px-6 md:px-12 lg:px-24 bg-white">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                <h2 className="text-4xl font-bold text-purple-900">
+                  About the Artist
+                </h2>
+                <p className="text-lg text-gray-700">
+                  ArtistName is a visionary creator pushing the boundaries of
+                  contemporary art. With a unique blend of traditional
+                  techniques and modern digital tools, their work explores
+                  themes of identity, nature, and the human experience in the
+                  digital age.
+                </p>
+                <div className="flex items-center space-x-4">
+                  <Palette className="text-purple-600 w-8 h-8" />
+                  <span className="text-purple-900 font-semibold">
+                    10+ Years of Artistic Journey
+                  </span>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <Music className="text-purple-600 w-8 h-8" />
+                  <span className="text-purple-900 font-semibold">
+                    Multidisciplinary Approach
+                  </span>
+                </div>
+              </div>
+              <div className="relative h-96 rounded-lg overflow-hidden shadow-xl transform rotate-3">
+                <Image
+                  src="/placeholder.svg?height=600&width=400"
+                  alt="Artist at work"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+            </div>
+          </section>
 
-          <div className="text-4xl flex justify-center gap-16 py-3 text-gray-600">
-            <AiFillYoutube />
-            <AiFillLinkedin />
-            <AiFillTwitterCircle />
-          </div>
+          <section
+            id="gallery"
+            className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-r from-indigo-100 to-purple-100"
+          >
+            <h2 className="text-4xl font-bold text-center text-purple-900 mb-12">
+              Gallery
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {[...Array(8)].map((_, i) => (
+                <div
+                  key={i}
+                  className="relative aspect-square rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                >
+                  <Image
+                    src={`/placeholder.svg?height=400&width=400&text=Artwork${
+                      i + 1
+                    }`}
+                    alt={`Artwork ${i + 1}`}
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
+              ))}
+            </div>
+            <div className="text-center mt-12">
+              <Button
+                variant="outline"
+                className="bg-white text-purple-600 border-purple-600 hover:bg-purple-100"
+              >
+                View Full Gallery
+              </Button>
+            </div>
+          </section>
 
-          <div className="relative mx-auto xl-auto 2xl-auto bg-gradient-to-b from-yellow-600 mt-20 w-100 h-300 rounded-full ">
-            <Image className="relative mx-auto xl-auto 2xl-auto"  src={logo} objectFit="cover"/>
-          </div>
-        
-        </section>
+          <section
+            id="events"
+            className="py-20 px-6 md:px-12 lg:px-24 bg-white"
+          >
+            <h2 className="text-4xl font-bold text-center text-purple-900 mb-12">
+              Upcoming Events
+            </h2>
+            <div className="max-w-4xl mx-auto space-y-8">
+              {[...Array(3)].map((_, i) => (
+                <div
+                  key={i}
+                  className="bg-gradient-to-r from-purple-50 to-indigo-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                >
+                  <div className="flex items-center space-x-4 mb-4">
+                    <Calendar className="text-purple-600 w-6 h-6" />
+                    <span className="text-purple-900 font-semibold">
+                      June {15 + i}, 2025
+                    </span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-purple-800 mb-2">
+                    Exhibition: The Color of Dreams
+                  </h3>
+                  <p className="text-gray-700 mb-4">
+                    Join us for an immersive journey through ArtistName's latest
+                    collection, exploring the vivid landscapes of the
+                    subconscious mind.
+                  </p>
+                  <Button
+                    variant="outline"
+                    className="bg-white text-purple-600 border-purple-600 hover:bg-purple-100"
+                  >
+                    Learn More
+                  </Button>
+                </div>
+              ))}
+            </div>
+          </section>
 
-        <section>
-          <div className="text-center">
-            <h3 className="text-3xl py-1 mt-2em">My Medium</h3>
+          <section
+            id="contact"
+            className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-purple-100 to-indigo-100"
+          >
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-4xl font-bold text-purple-900 mb-6">
+                Stay Connected
+              </h2>
+              <p className="text-lg text-purple-800 mb-8">
+                Subscribe to my newsletter for exclusive updates,
+                behind-the-scenes content, and early access to new releases.
+              </p>
+              <form className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <Input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="max-w-sm flex-1"
+                />
+                <Button
+                  type="submit"
+                  className="bg-purple-600 hover:bg-purple-700 text-white"
+                >
+                  Subscribe
+                </Button>
+              </form>
+              <div className="flex justify-center space-x-6">
+                <Link
+                  href="#"
+                  className="text-purple-600 hover:text-purple-800"
+                >
+                  <Instagram className="w-8 h-8" />
+                  <span className="sr-only">Instagram</span>
+                </Link>
+                <Link
+                  href="#"
+                  className="text-purple-600 hover:text-purple-800"
+                >
+                  <Twitter className="w-8 h-8" />
+                  <span className="sr-only">Twitter</span>
+                </Link>
+                <Link
+                  href="#"
+                  className="text-purple-600 hover:text-purple-800"
+                >
+                  <Facebook className="w-8 h-8" />
+                  <span className="sr-only">Facebook</span>
+                </Link>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer className="bg-purple-900 text-white py-12 px-6 md:px-12 lg:px-24">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <Link href="/posts/traditional" className="text-md py-2 leading-8 text-purple-400">Traditional First</Link>
-                    <div className="flex-wrap wrap-1">
-                      // image holders for now
-                      <div className="h-36 w-24 bg-blue-200">Yes</div>
-                      <div className="h-36 w-24 bg-blue-200">Hello</div>
-                      <div className="h-36 w-24 bg-blue-200">OK</div>
-                    </div>
+              <h3 className="text-2xl font-bold mb-4">ArtistName</h3>
+              <p className="text-purple-200">
+                Pushing the boundaries of art and imagination, one creation at a
+                time.
+              </p>
             </div>
             <div>
-              <Link href="/posts/digital" className="text-md py-2 leading-8 text-purple-400">Digital Newb</Link>
-                    <div className="flex-wrap wrap-1">
-                      // image holders for now
-                      <div className="h-36 w-24 bg-blue-200"></div>
-                      <div className="h-36 w-24 bg-blue-200"></div>
-                      <div className="h-36 w-24 bg-blue-200"></div>
-                    </div>
+              <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
+              <ul className="space-y-2">
+                <li>
+                  <Link
+                    href="#about"
+                    className="text-purple-200 hover:text-white"
+                  >
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#gallery"
+                    className="text-purple-200 hover:text-white"
+                  >
+                    Gallery
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#events"
+                    className="text-purple-200 hover:text-white"
+                  >
+                    Events
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#contact"
+                    className="text-purple-200 hover:text-white"
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
             </div>
-            
-            <p className="leading-loose">Long Ago, Crayons gave me the first glimpse of the idea that I had a love for making <span className="text-green-300">art</span>. From then I ventured to more technical drawings with graphite and pastel. My absolute two favorite mediums hands down; a tie because for one, the melodic dance of black and white from the graphite with fine points to deep shadows and the full freedom of expression with pastels. Lately I have been heavy on acrylic and watercolor, with some alcohol markers.</p>
-            <p className="leading-loose text-purple-600">Intrigued by ideas of how I may best exploit the Digital Spectrum to best portray the art I saw, since 2023, I have started working with drawing digitally. Quite the adventure, with the extensive scope of many possibilities, I am excited to sea what the medium brings to my collection.</p>
-
+            <div>
+              <h4 className="text-xl font-semibold mb-4">Contact</h4>
+              <address className="not-italic text-purple-200">
+                <p>123 Art Studio Lane</p>
+                <p>Creativity City, AC 12345</p>
+                <p>Email: hello@artistname.com</p>
+              </address>
+            </div>
           </div>
-        </section>
-
-        <div class="footer">
-        </div>
-
-
-      
-      </main>
+          <div className="mt-8 pt-8 border-t border-purple-800 text-center text-purple-300">
+            <p>
+              &copy; {new Date().getFullYear()} ArtistName. All rights reserved.
+            </p>
+          </div>
+        </footer>
+      </div>
     </div>
-  )
+  );
 }
