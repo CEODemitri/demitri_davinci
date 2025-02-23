@@ -22,56 +22,44 @@ export default function ArtistLandingPage() {
         <link />
       </Head>
 
-      <div className="min-h-screen bg-gradient-to-br from-purple-100 to-indigo-100">
+      <div className="min-h-screen bg-gradient-to-br from-orange-100 to-indigo-100">
         <header className="relative h-screen flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <Image
-              src="/placeholder.svg?height=1080&width=1920"
+            <img
+              src="https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?q=80&w=2160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Artist's showcase piece"
               layout="fill"
               objectFit="cover"
               className="opacity-50"
             />
           </div>
-          <nav className="absolute top-0 left-0 right-0 z-10 flex justify-between items-center p-6">
-            <Link href="/" className="text-2xl font-bold text-purple-900">
-              ArtistName
+          <nav className="fixed top-0 left-0 right-0 z-10 flex justify-between items-center p-6 text-black">
+            <Link href="/" className="text-2xl font-bold">
+              Demitri
             </Link>
             <div className="space-x-4">
-              <Link
-                href="#about"
-                className="text-purple-900 hover:text-purple-700"
-              >
+              <Link href="#about" className="hover:text-purple-700">
                 About
               </Link>
-              <Link
-                href="#gallery"
-                className="text-purple-900 hover:text-purple-700"
-              >
+              <Link href="#gallery" className="hover:text-purple-700">
                 Gallery
               </Link>
-              <Link
-                href="#events"
-                className="text-purple-900 hover:text-purple-700"
-              >
+              <Link href="#events" className="hover:text-purple-700">
                 Events
               </Link>
-              <Link
-                href="#contact"
-                className="text-purple-900 hover:text-purple-700"
-              >
+              <Link href="#contact" className="hover:text-purple-700">
                 Contact
               </Link>
             </div>
           </nav>
           <div className="relative z-10 text-center">
-            <h1 className="text-6xl font-extrabold text-purple-900 mb-4">
+            <h1 className="text-6xl font-extrabold text-black mb-4">
               Demitri Da Vinci
             </h1>
             <p className="text-2xl text-purple-800 mb-8">
               Exploring the boundaries of color and form
             </p>
-            <Button className="bg-purple-600 hover:bg-purple-700 text-white">
+            <Button className="bg-gradient-to-r from-purple-600 to-black hover:bg-purple-700 text-white">
               Explore My Work
             </Button>
           </div>
@@ -84,7 +72,7 @@ export default function ArtistLandingPage() {
                   About the Artist
                 </h2>
                 <p className="text-lg text-gray-700">
-                  ArtistName is a visionary creator pushing the boundaries of
+                  Demitri is a visionary creator pushing the boundaries of
                   contemporary art. With a unique blend of traditional
                   techniques and modern digital tools, their work explores
                   themes of identity, nature, and the human experience in the
